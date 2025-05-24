@@ -1,46 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Responsive Animated Login Form</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-  <section>
-    <div class="login-box">
-      <form action="#" method="post">
+
+    <div class="login-container">
         <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
 
-        <div class="input-box">
-          <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-          <input type="email" id="email" name="email" required />
-          <label for="email">Email</label>
-        </div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
 
-        <div class="input-box">
-          <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-          <input type="password" id="password" name="password" required />
-          <label for="password">Password</label>
-        </div>
-
-        <div class="remember-forget">
-          <label><input type="checkbox" /> Remember me</label>
-          <a href="#">Forgot Password?</a>
-        </div>
-
-        <button type="submit">Login</button>
-
-        <div class="register-link">
-          <p>Don't have an account? <a href="#">Register</a></p>
-        </div>
-      </form>
+            <button type="submit">Login</button>
+        </form>
     </div>
-  </section>
 
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>
