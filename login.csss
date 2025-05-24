@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  overflow: hidden;
+}
+
+.login-box {
+  position: relative;
+  width: 380px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+.login-box:hover {
+  transform: scale(1.02);
+}
+
+.login-box h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px 40px 12px 15px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  outline: none;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+  border-color: #00ffe7;
+}
+
+.input-box label {
+  position: absolute;
+  left: 15px;
+  top: 12px;
+  color: #ccc;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.input-box input:focus + label,
+.input-box input:valid + label {
+  top: -10px;
+  left: 10px;
+  font-size: 0.8rem;
+  color: #00ffe7;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0 5px;
+  border-radius: 3px;
+}
+
+.icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ccc;
+  font-size: 1.2rem;
+}
+
+.remember-forget {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin: 10px 0 25px;
+}
+
+.remember-forget label {
+  cursor: pointer;
+}
+
+.remember-forget a {
+  color: #00ffe7;
+  text-decoration: none;
+}
+
+.remember-forget a:hover {
+  text-decoration: underline;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: #00ffe7;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #00ccbb;
+}
+
+.register-link {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.register-link a {
+  color: #00ffe7;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 400px) {
+  .login-box {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .input-box input {
+    padding-left: 12px;
+  }
+
+  .input-box label {
+    left: 12px;
+  }
+}
